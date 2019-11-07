@@ -1,0 +1,20 @@
+body{
+background:red;
+
+}
+
+a{
+  color:#0c1365;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family:Helvetica,Arial,sans-serif;
+
+
+}
+
+ul{
+  list-style: none;
+
+
+}
