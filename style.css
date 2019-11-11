@@ -64,3 +64,44 @@ button{
     padding-right: 5%;
   }
 }
+
+/* Die Element ID wird mit Raute + ID angesprochen  */
+
+#hero{
+  background-image: url("img/intro.jpg");
+  /* 100 Viewport Height */
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  }
+
+.button{
+  background-color: #fff;
+  color: #374A67;
+  border: solid 2px #374A67;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
+  text-align: center ease;
+  /* Transition Übergang beim hovern */
+  transition: all 0.4s;
+  display: inline-block;
+
+}
+/* Peudo Selektor - nur dann wenn der User etwas macht , dann ändert sich,
+in diesem Fall wenn er über den Button hovert*/
+.button:hover{
+  background-color: #374A67;
+  color:#fff ;
+  border-color:#fff;
+
+}
