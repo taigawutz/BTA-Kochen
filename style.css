@@ -19,12 +19,30 @@ ul {
   list-style: none;
 }
 
-nav {
+header nav {
   display: none;
 }
 
 .show {
   display: block;
+  position: absolute;
+  top:64px;
+  background: lightgrey;
+  width: 100%;
+  left:0;
+  height: calc(100vh - 64px);
+  /* vh bedeutet viewport height minus 64 pixel, weil der header 64 Pixel
+  hoch ist*/
+  text-align:center;
+  line-height: 3rem;
+}
+
+.show ul{
+  padding: 0;
+  }
+
+.overflow{
+  overflow:hidden;
 }
 
 header {
@@ -41,11 +59,12 @@ header {
 button {
   border: 0;
   background: transparent;
+
 }
 
-nav a {
-  display: flex;
-  # align-items: stretch;
+header nav a {
+  /* display: flex; */
+  align-items: stretch;
 }
 
 h2 {
@@ -72,16 +91,20 @@ p {
 .card p a{
   color: #B2B2B2;
   /* justify-content: center; */
+  padding: 1rem;
 
   }
 
 .card{
   text-align: center;
-  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 1.75);
   border-radius: 5px;
-  width:40%;
+  /* width:40%; */
   /* dass Bild läuft über den Rand hinaus - wird verborgen */
   overflow: hidden;
+  margin: 1rem;
+  background: #bfdae2;
+
 }
 
 .card img{
@@ -93,7 +116,11 @@ p {
   background: #374A67;
   color: #fff;
   border-color: #374A67;
+  display: block;
+  margin: 1rem;
+
 }
+
 
 .button.button-blue:hover{
   background: #fff;
@@ -101,15 +128,92 @@ p {
   border-color: #374A67;
   }
 
-  /* .button:hover {
+
+  #social ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+              }
+
+  #social ul li{
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+
+  #legalcrap ul{
+    padding: 0;
+    text-align: center;
+      }
+
+  /* Die Element ID wird mit Raute + ID angesprochen  */
+  #hero {
+    background-image: url("img/intro.jpg");
+    /* 100 Viewport Height */
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    background-color: #fff;
+    color: #374A67;
+    border: solid 2px #374A67;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
+    text-align: center ease;
+    /* Transition Übergang beim hovern */
+    transition: all 0.4s;
+    display: inline-block;
+  }
+
+  /* Peudo Selektor - nur dann wenn der User etwas macht , dann ändert sich,
+  in diesem Fall wenn er über den Button hovert*/
+  .button:hover {
     background-color: #374A67;
     color: #fff;
     border-color: #fff;
-  } */
+  }
+
+  .end{
+  background: #374A67;
+  text-align: center;
+  }
+
+  #h2footer{
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 3rem;
+  }
+
+  #abo{
+    display: inline-block;
+    margin: 3rem;
+    }
+
+   .mailinput{
+     border-radius: 5px;
+     padding: 1rem;
+     font-size: 16px;
+     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
+
+   }
+
+
 
 /* display block ist der Normalzustand eines Display, heißt wird angezeigt */
 @media (min-width:1024px) {
-  nav {
+  header nav {
     display: block;
   }
 
@@ -129,43 +233,25 @@ p {
     padding-left: 5%;
     padding-right: 5%;
   }
-}
+  .row{
+    display: flex;
+  }
+  .card{
+    margin: 1rem;
+  }
 
-/* Die Element ID wird mit Raute + ID angesprochen  */
-#hero {
-  background-image: url("img/intro.jpg");
-  /* 100 Viewport Height */
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
+#footer{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3%;
 }
 
-.button {
-  background-color: #fff;
-  color: #374A67;
-  border: solid 2px #374A67;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
-  text-align: center ease;
-  /* Transition Übergang beim hovern */
-  transition: all 0.4s;
-  display: inline-block;
+/* #legalcrap{
+  display:flex;
 }
+#social{
+  display: flex;
+  justify-content: flex-end;
+} */
 
-/* Peudo Selektor - nur dann wenn der User etwas macht , dann ändert sich,
-in diesem Fall wenn er über den Button hovert*/
-.button:hover {
-  background-color: #374A67;
-  color: #fff;
-  border-color: #fff;
 }

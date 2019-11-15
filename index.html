@@ -7,6 +7,7 @@
   <title>BTA Kochen | Kochen und Coden</title>
   <meta name="description" content="Wir köcheln eine Website zusammen - Lecker">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="style.css">
   <!-- "width=device-width -> Anpassung Bildschirmgröße, initial-scale=1.0 -> Zoomstufe, user-scalable=yes -> user darf zoomem"> -->
 </head>
@@ -31,7 +32,6 @@
                       <!-  -->
     <button type="button" name="button">
       <img src="img/menu.svg" alt="Burger Menü" height="40">
-
     </button>
 
     <nav>
@@ -60,7 +60,6 @@
   <main id="hauptteil">
 
     <section id="hero">
-
       <div>
         <h1>Die besten Rezepte für Webworker</h1>
         <p>Es gibt mehr als Pizza & Ravioli</p>
@@ -68,8 +67,8 @@
       hinter href eingefügt -->
         <a href="#rezepte" class="button">Entdecke die Leckereien</a>
       </div>
-
     </section>
+
 
     <section id="rezepte">
 
@@ -81,15 +80,50 @@
             <a href="#"><img src="img/pizza2.jpg" alt="asdf"></a>
             <h3>
               <a href="#"></a>Total leckere Pizza</h3>
-              <p>
-                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Noch mehr Quatschlatein findet hier auf diesem Link.</a>
-              </p>
-              <a href="#" class="button button-blue">Zum Rezept</a>
+            <p>
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Noch mehr Quatschlatein findet hier auf diesem Link.</a>
+            </p>
+            <a href="#" class="button button-blue">Zum Rezept</a>
           </article>
 
-        <!-- </div>
+          <article class="card">
+            <a href="#"><img src="img/burger.jpg" alt="asdf"></a>
+            <h3>
+              <a href="#"></a>Total leckerer Burger</h3>
+            <p>
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Noch mehr Quatschlatein findet hier auf diesem Link.</a>
+            </p>
+            <a href="#" class="button button-blue">Zum Rezept</a>
+          </article>
+
+          <article class="card">
+            <a href="#"><img src="img\kuerbissuppe.jpg" alt="asdf"></a>
+            <h3>
+              <a href="#"></a>Total leckere Kürbissuppe</h3>
+            <p>
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Noch mehr Quatschlatein findet hier auf diesem Link.</a>
+            </p>
+            <a href="#" class="button button-blue">Zum Rezept</a>
+          </article>
+
+          <article class="card">
+            <a href="#"><img src="img/farfalle.jpg" alt="asdf"></a>
+            <h3>
+              <a href="#"></a>Total leckere Farfalle</h3>
+            <p>
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Noch mehr Quatschlatein findet hier auf diesem Link.</a>
+            </p>
+            <a href="#" class="button button-blue">Zum Rezept</a>
+          </article>
+          <!-- </div>
         <img src="img/pizza2.jpg" alt="">
         <h3>Total leckere Pizza</h3>
 
@@ -101,6 +135,54 @@
 
   </main>
 
+  <aside id="newsletter">
+    <div class="end">
+      <h2 id="h2footer">
+        Kein Rezept mehr verpassen<br>
+        Hol dir unseren Newsletter
+      </h2>
+
+      <form class="mail" action="" method="get">
+        <input type="email" name="email" value="" class="mailinput" placeholder="Deine E-Mailadresse">
+        <button type="submit" name="abschicken" id="abo" class="button">
+          Abonnieren
+        </button>
+        <!-- Alternative Schreibweise
+      <button type="submit" name="">Abonnieren</button> -->
+      </form>
+    </div>
+  </aside>
+
+  <footer id="footer">
+    <nav id="legalcrap">
+      <ul>
+        <li>
+          <a href="#">Impressum</a>
+        </li>
+        <li>
+          <a href="#">Datenschutz</a>
+        </li>
+        <li>
+          <a href="#">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav id="social">
+      <ul id="icons">
+        <li class="icon-facebook">
+          <a href="https://www.facebook.com "target=”_blank”></a>
+        </li>
+        <li class="icon-instagram">
+          <a href="https://www.instagram.com"target=”_blank”></a>
+        </li>
+        <li class="icon-youtube">
+          <a href="https://www.youtube.com"target=”_blank”></a>
+        </li>
+      </ul>
+    </nav>
+
+  </footer>
 
   <script src="js/menu.js">
 
